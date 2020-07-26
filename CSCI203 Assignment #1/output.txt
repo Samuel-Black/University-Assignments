@@ -1,0 +1,31 @@
+First 10 palindromes:
+aa : aa
+aaa : aaa
+aas : saa
+ab : ba
+aba : aba
+abac : caba
+abas : saba
+abay : yaba
+abba : abba
+abo : oba
+The longest palindrome in the dictionary is 11 characters long: kinnikinnik
+It took 1.65 seconds to find all palindromes in the dictionary.
+Valid Words: 610
+Unique Words: 276
+Unique Words in Dictionary: 275
+admire : armied damier dimera merida
+after : afret frate trefa
+again : angia
+along : anglo gonal lango logan longa nogal
+and : dan nad
+another : athenor rheotan
+answer : resawn
+any : nay yan
+are : aer ear era rea
+as : sa
+It took 7.68 seconds to construct the BST and find all possible anagrams.
+The word with the most anagrams is: tears with 14 anagrams.
+The longest word with anagrams is: conveniently at 12 characters.
+The total number of words with anagrams is: 183
+The total number of anagrams found is: 388
