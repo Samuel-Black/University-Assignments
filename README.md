@@ -53,3 +53,17 @@ Tasks related to the implementation of database transactions in MongoDB.
 * Task 4 - Implementation of validation with JSON schema: __3.5/3.5__
 
 Total marks awarded - __19.8/20__
+
+# CSCI318 - Software Engineering Practices & Principles - Assignment
+
+## Scope 
+Implementation of Random Testing and Adaptive Random Testing (FSCS-ART) test-case generation algorithms and create a visual simulation testing tool to compare the effectiveness in error detection in numerical programs/inputs.
+
+Implementation of Random Testing and Adaptive Random Testing (ARTOO) test-case generation algorithms to be used by programmers wishing to conduct black/white box testing and to compare the effectiveness in error detection in non-numerical programs/inputs.
+
+## Tasks
+* Part 1 - Software qualities: __12/15__
+* Part 2 - Experiments: __10/10__
+* Part 3 - Validity: __8/10__
+
+Total marks awarded - __30/35__

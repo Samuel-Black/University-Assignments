@@ -444,11 +444,8 @@ void ServerArray::swapServer(int* x, int* y)//This swap is used for the actual S
 
 /*
 All enhancements & algorithms used are listed below.
-
 Step #1: Customer Queue uses circular queue for O(1) efficiency since queue is FIFO.
-
 Step #2: Event Queue uses a Min Heap for O(log n) efficiency of getting the next event based on lowest time.
-
 Step #3: Server Array reads the servers from the file, and sorts them in order of lowest efficiency using a sift up while loop in the insert method O(log n).
 		 I then initialize an integer array the size of n to represent the positions of the sorted servers O(n). To always get the most efficient idle server I
 		 min-heapify the integer array based on lowest position and extract the position after doing so, the position is added back to the integer array once

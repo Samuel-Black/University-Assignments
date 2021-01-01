@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany</groupId>
+    <artifactId>ARTandRT</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!-- <packaging>jar</packaging> -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <src.dir>src/main/java</src.dir>
+    </properties>
+    
+    <dependencies>        
+        <!-- For text comparision -->
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.9</version>
+        </dependency>
+
+		<!-- For file copy -->
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.8.0</version>
+		</dependency>
+
+
+
+
+        <!-- For type distance -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>
+	    
+	<!-- For list all classes in a package -->
+	<!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
+	<dependency>
+	    <groupId>org.reflections</groupId>
+	    <artifactId>reflections</artifactId>
+	    <version>0.9.11</version>
+	</dependency>
+    </dependencies>
+    
+    
+    <build>
+    	<sourceDirectory>${src.dir}</sourceDirectory>
+	    <plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-assembly-plugin</artifactId>
+			    <version>2.2.1</version>
+			    <configuration>
+				    <descriptorRefs>
+				    	<descriptorRef>jar-with-dependencies</descriptorRef>
+				    </descriptorRefs>
+				    <archive>
+				        <manifest>
+				             <mainClass>Program.CSCI318</mainClass>
+				        </manifest>
+				    </archive>
+			    </configuration>
+			    <executions>
+	                <execution>
+	                    <phase>package</phase>
+	                    <goals>
+	                        <goal>single</goal>
+	                    </goals>
+	                </execution>
+	            </executions>
+			 </plugin>
+	    </plugins>
+	</build>
+	
+</project>
